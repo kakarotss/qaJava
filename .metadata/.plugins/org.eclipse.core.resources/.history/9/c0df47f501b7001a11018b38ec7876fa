@@ -69,7 +69,7 @@ public class Ex_1 {
 			num2 = in.nextInt();
 			in.close();
 			
-			System.out.println("Your answer is: "+addition(num1,num2));
+			System.out.println(addition(num1,num2));
 			break;
 			
 		case 2:
@@ -78,7 +78,7 @@ public class Ex_1 {
 			System.out.println("Subtraction- enter the second number ");
 			num2 = in.nextInt();
 			
-			System.out.println("Your answer is: "+subtraction(num1,num2));
+			System.out.println(subtraction(num1,num2));
 			in.close();
 			break;
 			
@@ -89,7 +89,7 @@ public class Ex_1 {
 			num2 = in.nextInt();
 			in.close();
 			
-			System.out.println("Your answer is: "+division(num1,num2));
+			System.out.println(division(num1,num2));
 			in.close();
 			break;
 			
@@ -99,7 +99,7 @@ public class Ex_1 {
 			System.out.println("Multiplication- enter the second number ");
 			num2 = in.nextInt();
 			
-			System.out.println("Your answer is: "+multiplication(num1,num2));
+			System.out.println(multiplication(num1,num2));
 			in.close();
 			break;
 			
