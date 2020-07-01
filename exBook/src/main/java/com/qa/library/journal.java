@@ -72,6 +72,15 @@ public class journal implements booksInterface{
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "journal [title=" + title + ", Year=" + Year + ", Author=" + Author + ", checkedOutBy=" + checkedOutBy
+				+ "]";
+	}
+	
 	
 	
 

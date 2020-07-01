@@ -1,5 +1,7 @@
 package com.qa.library;
 
+import java.util.Scanner;
+
 public class person extends per {
 	
 	private String username;
@@ -36,10 +38,14 @@ public class person extends per {
 
 
 	@Override
-	public person register(String Username, String Password) {
+	public person register() {
 		person person = new person();
-		person.setUsername(Username);
-		person.setPassword(Password);
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter username: ");
+		person.setUsername(in.nextLine());
+		System.out.println("Enter password: ");
+		person.setPassword(in.nextLine());
 		return person;
 		// TODO Auto-generated method stub
 		

@@ -59,4 +59,13 @@ public class books implements booksInterface {
 		
 	}
 
+
+
+	@Override
+	public String toString() {
+		return "books [title=" + title + ", year=" + year + ", checkedOutBy=" + checkedOutBy + "]";
+	}
+	
+	
+
 }
