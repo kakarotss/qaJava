@@ -30,8 +30,6 @@ public class controller {
 		}
 		
 		return car;
-		
-		
 	}
 	
 	
@@ -72,7 +70,6 @@ public class controller {
 		car car = new car();
 //		vehicle veh = new vehicle();
 		
-
 		
 //		vehicle car = new car();
 		car.setMake("Ford");
@@ -156,12 +153,7 @@ for(int h = 0; h<10; h++) {
 		
 		
 		
-//		vehicleList.add(mot1);
-		
-		
-//		vehicleList.forEach(v -> System.out.println(v.toString() +" price "+ v.priceCalc("car", 5, false))); 
-		
-//		System.out.println(vehicleList[1]);
+
 		
 		for (int i = 0; i< vehicleList.size(); i++) {
 			
