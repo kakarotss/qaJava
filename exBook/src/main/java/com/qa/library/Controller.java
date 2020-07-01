@@ -70,7 +70,7 @@ else
 	System.out.println("1  Check out a book");
 	System.out.println("2  Check out a journal out");
 	System.out.println("3  Check in a book");
-	System.out.println("3  Check in a journal");
+	System.out.println("4  Check in a journal");
 	
 }
 
