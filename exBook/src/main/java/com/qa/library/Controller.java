@@ -2,6 +2,7 @@ package com.qa.library;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.qa.garageEx.vehicle;
 
@@ -72,6 +73,33 @@ else
 	System.out.println("3  Check in a book");
 	System.out.println("4  Check in a journal");
 	
+	Scanner in = new Scanner(System.in);
+	options = in.nextInt();	
+	
+	switch (options) {
+	case 1: 
+		System.out.println("Enter the book ID you want to check out");
+		int opval = in.nextInt();
+		
+		
+		booksList.get(opval).setCheckedOutBy(person.getUsername());
+		for (int i = 0; i< booksList.size(); i++) {
+			System.out.println("Book checked out successfully");
+			System.out.println("------------------");
+			System.out.println("Printing all books");
+			System.out.println("------------------");
+			System.out.println("ID: "+ i +"   "+booksList.get(i));
+			System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+		}
+		
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	}
 }
 
 
