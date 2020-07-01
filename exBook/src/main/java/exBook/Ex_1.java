@@ -2,7 +2,7 @@ package exBook;
 
 import java.util.Scanner;
 
-public class Ex_1 {
+//public class Ex_1 {
 	
 	//EX 1
 //	public static String thatsMyName(String name) {
@@ -105,37 +105,37 @@ public class Ex_1 {
 //			
 //		}
 	
-	public static void main(String[] args) {
-		String[] unit = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
-		
-		String[] tens = {"twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-		
-		int t = 0;
-		int u = 0;
-		System.out.println();
-		System.out.println(100%3);
-		System.out.println();
-		
-		for(int i =0; i < 28; i++) {
-			if (i < 19) {
-			System.out.println(unit[i]);
-			} else if (i > 19 && i < 100) {
-				System.out.println(tens[t]);
-				for (int j = 0; j< 9; j++)
-				{
-					System.out.println(tens[t]+ " " + unit[u]);
-					u++;					
-				}
-				
-				u=0;
-				
-				t++;
-				if (t == 8) {
-					t=0;
-				}
-				
-			}
-		}
-	}
-
-}
+//	public static void main(String[] args) {
+//		String[] unit = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+//		
+//		String[] tens = {"twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+//		
+//		int t = 0;
+//		int u = 0;
+//		System.out.println();
+//		System.out.println(100%3);
+//		System.out.println();
+//		
+//		for(int i =0; i < 28; i++) {
+//			if (i < 19) {
+//			System.out.println(unit[i]);
+//			} else if (i > 19 && i < 100) {
+//				System.out.println(tens[t]);
+//				for (int j = 0; j< 9; j++)
+//				{
+//					System.out.println(tens[t]+ " " + unit[u]);
+//					u++;					
+//				}
+//				
+//				u=0;
+//				
+//				t++;
+//				if (t == 8) {
+//					t=0;
+//				}
+//				
+//			}
+//		}
+//	}
+//
+//}
