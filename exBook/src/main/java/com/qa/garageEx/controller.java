@@ -98,7 +98,7 @@ public class controller {
 		
 		
 		
-		List<vehicle> vehicleList = new ArrayList<vehicle>();
+		List<vehicle> vehicleList = new ArrayList<>();
 		
 		vehicleList.add(car);
 		vehicleList.add(mot);
