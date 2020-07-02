@@ -18,11 +18,10 @@ public class controller {
 		
 		System.out.println("List of all names: "+ names);
 		System.out.println();
-		List<String> results = names.stream()
-				.filter(s -> s !="James").collect(Collectors.toList());
+		names.stream().filter(s -> s !="James").forEach(s -> System.out.println("Hello"+s));
 		
 		
-		System.out.println("List of all names apart from James: "+ results);
+//		System.out.println("List of all names apart from James: "+ results);
 		System.out.println();
 		
 		List<Integer> numbers = Arrays.asList(3, 4, 7, 8, 12);
