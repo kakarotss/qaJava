@@ -52,7 +52,10 @@ public class controller {
 		
 		List<Integer> squared = numbers.stream().map(v -> v*v).collect(Collectors.toList());
 		System.out.println("List of squared numbers: "+squared);
+		System.out.println();
 		
+		int multiplied = numbers.stream().map(v -> v).reduce(0, (subtotal, element) -> (subtotal + element)*element);
+		System.out.println("List of even numbers from the list: "+multiplied);
 		
 		
 		
