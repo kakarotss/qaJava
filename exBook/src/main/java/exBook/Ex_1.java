@@ -3,7 +3,10 @@ package exBook;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 public class Ex_1 {
+	public static final Logger LOGGER = Logger.getLogger(Ex_1.class);
 
 	// EX 1
 //	public static String thatsMyName(String name) {
@@ -46,7 +49,16 @@ public class Ex_1 {
 
 	}
 
+	public static void logMessage(String message) {
+		LOGGER.info(message);
+	}
+
 	public static void main(String[] args) throws InvalidDivisionExcepion {
+
+		LOGGER.info("dsgsd");
+
+//		logMessage("I dont exactly know how youre working");
+
 		// EX 2 modded
 		System.out.println("--------------------------");
 		System.out.println("CALCULATOR");
