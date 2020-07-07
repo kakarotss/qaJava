@@ -33,7 +33,10 @@ public class Ex_1 {
 
 	}
 
-	public static int division(int number, int number2) {
+	public static int division(int number, int number2) throws InvalidDivisionExcepion {
+		if (number < number2) {
+			throw new InvalidDivisionExcepion("Division failed- " + number + " is smaller than " + number2);
+		}
 		return number / number2;
 
 	}
@@ -43,7 +46,7 @@ public class Ex_1 {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidDivisionExcepion {
 		// EX 2 modded
 		System.out.println("--------------------------");
 		System.out.println("CALCULATOR");
@@ -91,8 +94,14 @@ public class Ex_1 {
 				num2 = in.nextInt();
 				in.close();
 
-				System.out.println("Your answer is: " + division(num1, num2));
+				try {
+					System.out.println("Your answer is: " + division(num1, num2));
+				} catch (InvalidDivisionExcepion d) {
+					System.out
+							.println("Entered numbers cannot be divided because " + num1 + " is smaller than " + num2);
+				}
 				in.close();
+
 				break;
 
 			case 4:
@@ -107,7 +116,7 @@ public class Ex_1 {
 
 			}
 		} catch (InputMismatchException e) {
-			System.out.println("Invalid input, shutting down application");
+			System.out.println("Invalid inputs, shutting down application");
 		}
 
 	}
